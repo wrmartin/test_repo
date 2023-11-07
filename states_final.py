@@ -511,7 +511,7 @@ for i in tqdm(range(len(probs_avg)), desc="Getting trajectory indices over thres
             tmpind.append(j)
     traj_state.append(tmpstate)
     traj_ind.append(tmpind)
-
+'''
 os.makedirs("state_trajectories", exist_ok=True)
 top = os.path.join(directory, "structure.pdb")
 for i in tqdm(range(len(traj_state)), desc="Splitting trajectories"):
@@ -532,4 +532,4 @@ for i in tqdm(range(len(traj_state)), desc="Splitting trajectories"):
             p.communicate(b'0\n')
             p.wait()
             os.remove(index)
-
+'''
